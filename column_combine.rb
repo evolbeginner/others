@@ -13,7 +13,7 @@ def read_input(input, index, final, final2input, fields)
       line = fields.map{|i|line_arr[i-1]}.join("\t")
     end
     final[index].push(line)
-    final2input[index] = input
+    final2input[index] = File.basename(input)
   end
 end
 
